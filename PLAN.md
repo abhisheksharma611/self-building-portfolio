@@ -49,6 +49,8 @@ Verify at every gate on the working tree. All on `master`, transactional history
 - **Commit 4 — app:** src/app/ (layout.tsx, page.tsx, globals.css, robots.ts, sitemap.ts,
   fonts). Gate: `npm run typecheck`, `npm test`, `npm run build`,
   `python tests/smoke.py` — ALL green.
+- **Commit 5 — tests:** tests/ (content.test.ts, smoke.py). Gate: `npm test` green;
+  smoke suite green against `npm run dev`.
 - **Push** after commit 4 is green. Never push a red build; CI is the backstop, not the gate.
 - Final sweep before pushing: `git status` shows zero untracked junk; `git check-ignore`
   confirms node_modules / .next / local tool directories / tsbuildinfo / next-env.d.ts are
