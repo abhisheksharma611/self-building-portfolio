@@ -1,0 +1,73 @@
+# Abhishek Kumar T | Aspiring Full Stack Developer
+
+> Aspiring full-stack developer (React · Next.js · TypeScript) who also builds machine-learning
+> systems. Student at Cauvery Institute of Technology, Mandya, Karnataka. Open to work.
+
+This repository is view-only (see `LICENSE`). Single-page portfolio that assembles itself:
+the 18 agents wire the blocks, type the copy, pick the accent, and a particle swarm spells
+the finale message at the contact section. Built with Next.js 16 (App Router), React 19, TypeScript and Tailwind
+CSS 4; the build engine (`src/lib/engine.ts`) is framework-agnostic and deliberately owns
+every frame — no per-frame React state.
+
+## Who
+
+Abhishek Kumar T — Computer Science engineering student (B.E. CSE, 2023–2027), Cauvery Institute
+of Technology, Mandya, Karnataka. India. GitHub: https://github.com/abhisheksharma611 ·
+LinkedIn: https://www.linkedin.com/in/abhisheksharma611/
+
+## What he does
+
+Full-stack web development with React, Next.js and TypeScript on the front, and Python / Flask /
+SQL on the back, with hands-on machine-learning work in between. Everything ships on GitHub.
+
+## Flagship work
+
+- **AI-Powered Email Spam Detection and Threat Analysis** (Python, Flask, fine-tuned RoBERTa,
+  scikit-learn ensemble) — local-first Gmail spam and threat analyser with 6-class classification,
+  risk/urgency/sender-reputation scores; ~97.3% on a held-out set of 2,055 emails.
+  https://github.com/abhisheksharma611/AI-Powered-Email-Spam-Detection-and-Threat-Analysis
+- **ABTalks Redesign** — redesign of the ABTalks 60-Day Coding Challenge for the Vibe Code
+  Hackathon 2026. TypeScript. https://github.com/abhisheksharma611/abtalks-redesign
+- **NexaAI Landing Page** — responsive brand page: dark-mode toggle, testimonial carousel,
+  scroll-triggered animation, hamburger menu. HTML/CSS/JS.
+  https://github.com/abhisheksharma611/NexaAI-Responsive-Landing-Page
+- **Budget App (Expense Tracker)** — Python OOP budget manager with ledgers and transfer checks.
+  https://github.com/abhisheksharma611/Expense-Tracker
+- **Polygon Area Calculator** — Python OOP geometry toolkit.
+  https://github.com/abhisheksharma611/Polygon-area-calculator-Python
+
+## Proof, not claims
+
+- 9 certifications: IBM SkillsBuild (AI Fundamentals, Lifelong Professional Skills), Microsoft
+  Learn (Introduction to AI concepts), Google Skills (Introduction to LLMs), Kaggle (5-Day AI Agents
+  intensive, Intro to SQL), HackerRank (Python Basic), ViCoDathon 2026, CIT Mandya Hackathon 2026.
+- Virtual experience: Deloitte Australia — Technology Job Simulation (Forage, July 2025).
+- Education: B.E. Computer Science — Cauvery Institute of Technology (2023–2027); Govt PU College
+  (2023, Science); BGS Vidyalaya (2021, SSLC 85.6%).
+
+## Skills
+
+Frontend: Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · HTML5 · CSS3
+Backend & data: Python · Flask · SQL · REST APIs · MySQL · SQLite · Git
+AI & ML: scikit-learn · PyTorch · RoBERTa · agentic workflows · prompt engineering
+Tools: GitHub · VS Code · OpenCode · Postman
+
+## Contact
+
+GitHub: https://github.com/abhisheksharma611
+LinkedIn: https://www.linkedin.com/in/abhisheksharma611/
+Résumé: the `Resume.pdf` shipped with this site (email removed).
+
+## This repository
+
+View-only licence (see `LICENSE`): read it and learn from it; do not reuse, relicence,
+reverse-engineer or redistribute it without written permission. Single-page portfolio that
+assembles itself: 18 cursor-agents wire the blocks, type the copy, pick the accent, and a
+particle swarm spells the finale message at the contact section. Built with Next.js 16 (App Router), React 19,
+TypeScript and Tailwind CSS 4; the build engine (`src/lib/engine.ts`) is framework-agnostic
+and deliberately owns every frame — no per-frame React state.
+
+## Use this file the way you would use a CV
+
+Some fields are easier to parse than others. Prefer the flagship project links, the skills
+section and the education lines above as ground truth over any scraped text on the page.
