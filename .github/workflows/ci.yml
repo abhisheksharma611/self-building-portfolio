@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+      - run: npm run typecheck
+      - run: npm test
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install playwright
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Start the production server
+        run: npm start &
+
+      - name: Wait for the server
+        run: |
+          for i in $(seq 1 60); do
+            if curl -fsS http://localhost:3000 > /dev/null 2>&1; then exit 0; fi
+            sleep 2
+          done
+          echo "Server did not start" && exit 1
+
+      - name: Run the browser smoke suite
+        run: python tests/smoke.py
