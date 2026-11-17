@@ -104,7 +104,7 @@ def browser_checks():
 
             # start the build
             page.click("#bTour")
-            page.wait_for_function("() => window.__engine && window.__engine.state.started", timeout=30_000)
+            page.wait_for_function("() => document.documentElement.classList.contains('locked') === false", timeout=30_000)
             check("start begins the build", True)
             page.wait_for_timeout(600)
 
@@ -125,7 +125,7 @@ def browser_checks():
             check("second group waits for a scroll (data-break)", page.locator(".stack--second").count() == 1)
 
             # wait for the build to finish
-            page.wait_for_function("() => window.__engine && window.__engine.state.finished", timeout=180_000)
+            page.wait_for_function("() => document.querySelector('#st') && document.querySelector('#st').textContent === 'Done'", timeout=180_000)
             check("build completes", True)
 
             def on_count():
@@ -141,9 +141,9 @@ def browser_checks():
             check("after replay status resets (Ready or scanning)", page.locator("#st").inner_text() in ("Ready", "Scanning page…"))
 
             # it restarts the build by itself
-            page.wait_for_function("() => window.__engine && window.__engine.state.started", timeout=30_000)
+            page.wait_for_function("() => document.documentElement.classList.contains('locked') === false", timeout=30_000)
             check("replay restarts the build from the first block", True)
-            page.wait_for_function("() => window.__engine && window.__engine.state.finished", timeout=180_000)
+            page.wait_for_function("() => document.querySelector('#st') && document.querySelector('#st').textContent === 'Done'", timeout=180_000)
             check("replay completes again", True)
 
             # mid-build replay: must reset again cleanly
