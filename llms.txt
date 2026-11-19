@@ -36,7 +36,7 @@ SQL on the back, with hands-on machine-learning work in between. Everything ship
 - **Polygon Area Calculator** — Python OOP geometry toolkit.
   https://github.com/abhisheksharma611/Polygon-area-calculator-Python
 
-## Proof, not claims
+## Credentials
 
 - 9 certifications: IBM SkillsBuild (AI Fundamentals, Lifelong Professional Skills), Microsoft
   Learn (Introduction to AI concepts), Google Skills (Introduction to LLMs), Kaggle (5-Day AI Agents
@@ -60,12 +60,8 @@ Résumé: the `Resume.pdf` shipped with this site (email removed).
 
 ## This repository
 
-View-only licence (see `LICENSE`): read it and learn from it; do not reuse, relicence,
-reverse-engineer or redistribute it without written permission. Single-page portfolio that
-assembles itself: 18 cursor-agents wire the blocks, type the copy, pick the accent, and a
-particle swarm spells the finale message at the contact section. Built with Next.js 16 (App Router), React 19,
-TypeScript and Tailwind CSS 4; the build engine (`src/lib/engine.ts`) is framework-agnostic
-and deliberately owns every frame — no per-frame React state.
+View-only licence (see `LICENSE`). Read it, learn from it, leave it alone — no reuse, no
+relicence, no reverse-engineer, no redistribute without written permission.
 
 ## Use this file the way you would use a CV
 

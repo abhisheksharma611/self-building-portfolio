@@ -21,8 +21,9 @@ A living plan. Update it when a step lands or a priority changes.
 
 ## Next (in priority order)
 
-1. [ ] Push to the project's own repository and attach CI. Creating the remote repo is
-       an explicit maintainer action; nothing is pushed automatically.
+1. [x] Push to the project's own repository and attach CI. Done 2026-11-17:
+       https://github.com/abhisheksharma611/self-building-portfolio
+2. [ ] JSON-LD `Person` structured data — the predecessor site already has one; match it.
 2. [ ] Interactive demo of the spam classifier (paste an email → model scores it).
        It makes the portfolio demonstrable, not just readable. Needs the model's weights
        or a hosted endpoint; decide before wiring the UI.
@@ -32,9 +33,9 @@ A living plan. Update it when a step lands or a priority changes.
 5. [ ] `?` shortcut overlay listing the keyboard map.
 6. [ ] JSON-LD `Person` structured data.
 
-## Push plan (the maintainer creates the repo and decides when to push)
+## Push plan (executed once — the maintainer owns all future pushes)
 
-Verify at every gate on the working tree. All on `master`, transactional history.
+Every gate was green on the working tree. All on `master`. Executed 2026-11-17.
 
 - **Commit 0 — hygiene:** LICENSE, NOTICE, README.md, AGENTS.md, ARCHITECTURE.md,
   llms.txt, CONTRIBUTING.md, SECURITY.md, CHANGELOG.md, PLAN.md, .gitignore. Gate:
@@ -64,6 +65,5 @@ Verify at every gate on the working tree. All on `master`, transactional history
 
 ## Roadmap themes
 
-- Keep the build graph honest: every block builds from real, public data.
-- Contain the blast radius of each phase: one visible change per phase, verified before
-  the next.
+- Every block builds from real, public data.
+- Each change is verified before the next; if a phase goes red, fix it before moving on.

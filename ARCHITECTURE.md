@@ -23,8 +23,7 @@ framework-agnostic TypeScript module that:
   sped up (1/2/0.5×) and replayed,
 - owns the rAF loop (`frame()`), the agent jobs, the wires, the swarm and the sounds.
 
-No React state changes after mount. That is what keeps the build smooth on a phone, and
-it is the part a naive port breaks first.
+No React state changes after mount. That keeps the build smooth on a phone.
 
 ## The build sequence
 
@@ -40,7 +39,7 @@ start()                  ← Space / clickanywhere / replay
   → finale()             ← the swarm spells ABHISHEK, ♥, LET'S BUILD around the contact button
 ```
 
-## The replay contract (the hard part)
+## The replay contract
 
 Replay (`#bReplay`) or pressing `Space` when the build is finished calls `reset()`, which
 must leave the page byte-for-byte equivalent to a fresh first load:

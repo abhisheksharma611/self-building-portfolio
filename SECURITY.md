@@ -1,7 +1,7 @@
 # SECURITY.md
 
-This is a static site (no server, no database, no backend beyond what the static host
-serves) and is not designed to be a target — but reports are still welcome.
+This is a static site: no server, no database, no backend beyond what the static host serves.
+It's not set up to take anything, but reports are still welcome.
 
 ## Reporting a vulnerability
 
