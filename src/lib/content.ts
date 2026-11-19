@@ -119,7 +119,7 @@ export const projects: Project[] = [
     blurb:
       "A single-page portfolio that assembles itself: eighteen cursors type the copy, wire the blocks and pick the accent colour before you scroll.",
     tags: ["TypeScript", "React", "Motion"],
-    href: "https://github.com/abhisheksharma611",
+    href: "https://github.com/abhisheksharma611/self-building-portfolio",
   },
 ];
 

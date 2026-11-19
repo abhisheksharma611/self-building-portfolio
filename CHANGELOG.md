@@ -24,6 +24,10 @@ All notable changes to this project. This project is view-only; see `LICENSE`.
 - Full documentation set: `ARCHITECTURE.md`, `AGENTS.md`, `PLAN.md`, `NOTICE.md`,
   `CONTRIBUTING.md`, `SECURITY.md`, `llms.txt`.
 
+### Changed
+- The "This portfolio" project card points at the actual GitHub repo
+  (`abhisheksharma611/self-building-portfolio`) instead of the profile page.
+
 ### Fixed
 - Resume: the address on the contact line was not properly masked, so it identified the
   mailbox; it is removed entirely now. The portfolio URL takes that line. The resume
