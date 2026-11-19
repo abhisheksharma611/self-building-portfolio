@@ -61,9 +61,9 @@ def static_checks():
 
     # 2. metadata does not hard-code a production domain
     layout = (ROOT / "src" / "app" / "layout.tsx").read_text(encoding="utf-8")
-    check("metadata does not hard-code a production domain", "abhishek-kumar-t.vercel.app" not in layout)
+    check("metadata does not hard-code a production domain", ".vercel.app" not in layout)
     site = (ROOT / "src" / "lib" / "site.ts").read_text(encoding="utf-8")
-    check("NEXT_PUBLIC_SITE_URL is the only domain source", "abhishek-kumar-t.vercel.app" not in site)
+    check("NEXT_PUBLIC_SITE_URL is the only domain source", ".vercel.app" not in site)
 
     # 3. project structure
     check("package.json present", (ROOT / "package.json").is_file())

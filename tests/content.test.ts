@@ -16,7 +16,7 @@ import {
 } from "../src/lib/content";
 
 const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/;
-const LIVE_DOMAIN_RE = /abhishek-kumar-t\.vercel\.app/i;
+const VERCEL_DOMAIN_RE = /\.vercel\.app/i;
 
 describe("content is shippable as-is", () => {
   it("hero has all fields", () => {
@@ -26,7 +26,7 @@ describe("content is shippable as-is", () => {
     expect(hero.tagline.length).toBeGreaterThan(0);
   });
 
-  it("has no leaks: no email address, no live domain", () => {
+  it("has no leaks: no email address, no hard-coded domain", () => {
     const blob = JSON.stringify({
       hero,
       bench,
@@ -39,7 +39,7 @@ describe("content is shippable as-is", () => {
       links,
     });
     expect(blob).not.toMatch(EMAIL_RE);
-    expect(blob).not.toMatch(LIVE_DOMAIN_RE);
+    expect(blob).not.toMatch(VERCEL_DOMAIN_RE);
   });
 
   it("links are well-formed", () => {

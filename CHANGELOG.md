@@ -30,6 +30,8 @@ All notable changes to this project. This project is view-only; see `LICENSE`.
 - The spam-detection project card and the on-bench sidebar show the GitHub repo name verbatim:
   "AI-Powered Email Spam Detection and Threat Analysis". Repo slug unchanged — link
   intact.
+- The résumé and the repo cleanly omit the live-site URL; metadata verification is purely
+  via `NEXT_PUBLIC_SITE_URL` (no production domain hardcoded).
 
 ### Fixed
 - Resume: the address on the contact line was not properly masked, so it identified the
