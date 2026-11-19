@@ -72,7 +72,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "Spam & threat analyzer",
+    name: "AI-Powered Email Spam Detection and Threat Analysis",
     kind: "AI / ML",
     blurb:
       "Local-first Gmail analyzer: fine-tuned RoBERTa plus a scikit-learn ensemble, six classes, risk and sender-reputation scores. 97.3% on a held-out set of 2,055 emails.",

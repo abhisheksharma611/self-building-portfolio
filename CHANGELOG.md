@@ -25,10 +25,11 @@ All notable changes to this project. This project is view-only; see `LICENSE`.
   `CONTRIBUTING.md`, `SECURITY.md`, `llms.txt`.
 
 ### Changed
-- "DEVELOPER" mega-word reveal now plays a deep sine/triangle pitch drop (300 Hz → 82 Hz)
-  instead of the whoosh — cinematic, restrained, distinct from the pointer clicks.
 - The "This portfolio" project card points at the actual GitHub repo
   (`abhisheksharma611/self-building-portfolio`) instead of the profile page.
+- The spam-detection project card shows its GitHub repo name verbatim:
+  "AI-Powered Email Spam Detection and Threat Analysis". Repo slug unchanged — link
+  intact.
 
 ### Fixed
 - Resume: the address on the contact line was not properly masked, so it identified the
