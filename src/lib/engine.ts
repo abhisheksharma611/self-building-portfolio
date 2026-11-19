@@ -141,23 +141,6 @@ export function mountEngine(opts: EngineOptions): () => void {
     chord() {
       [0, 4, 7, 12, 16].forEach((s, i) => this.tone(330 * Math.pow(2, s / 12), 0.9, "triangle", 0.05, i * 0.07));
     },
-    // the mega "DEVELOPER" reveal: a deep sine drop, cinematic but restrained
-    boom() {
-      const ctx = this.ctx;
-      if (!this.on || !ctx || ctx.state !== "running") return;
-      const t = ctx.currentTime;
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.type = "sine";
-      osc.frequency.setValueAtTime(300, t);
-      osc.frequency.exponentialRampToValueAtTime(82, t + 0.42);
-      gain.gain.setValueAtTime(0, t);
-      gain.gain.linearRampToValueAtTime(0.22, t + 0.012);
-      gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.5);
-      osc.connect(gain).connect(ctx.destination);
-      osc.start(t);
-      osc.stop(t + 0.52);
-    },
     whoosh() {
       this.tone(180, 0.5, "sawtooth", 0.02);
       this.tone(90, 0.6, "sine", 0.06);
@@ -535,7 +518,7 @@ export function mountEngine(opts: EngineOptions): () => void {
       if (gen !== buildGeneration) return;
       a.click();
       item.el.classList.add("on");
-      sound.boom();
+      sound.whoosh();
       const t = $<SVGTextElement>("text", item.el);
       if (t) void tween(1500, (k) => (t.style.strokeDashoffset = String(2400 * (1 - ease(k)))));
       await wait(260);
