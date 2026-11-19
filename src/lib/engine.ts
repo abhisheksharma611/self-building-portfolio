@@ -141,6 +141,11 @@ export function mountEngine(opts: EngineOptions): () => void {
     chord() {
       [0, 4, 7, 12, 16].forEach((s, i) => this.tone(330 * Math.pow(2, s / 12), 0.9, "triangle", 0.05, i * 0.07));
     },
+    // the mega "DEVELOPER" reveal: a short keyboard clack, not a whoosh — crisp mechanical snap
+    keyClack() {
+      this.tone(190, 0.07, "triangle", 0.09);
+      this.tone(1300, 0.03, "square", 0.045);
+    },
     whoosh() {
       this.tone(180, 0.5, "sawtooth", 0.02);
       this.tone(90, 0.6, "sine", 0.06);
@@ -518,7 +523,7 @@ export function mountEngine(opts: EngineOptions): () => void {
       if (gen !== buildGeneration) return;
       a.click();
       item.el.classList.add("on");
-      sound.whoosh();
+      sound.keyClack();
       const t = $<SVGTextElement>("text", item.el);
       if (t) void tween(1500, (k) => (t.style.strokeDashoffset = String(2400 * (1 - ease(k)))));
       await wait(260);

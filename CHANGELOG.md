@@ -25,6 +25,8 @@ All notable changes to this project. This project is view-only; see `LICENSE`.
   `CONTRIBUTING.md`, `SECURITY.md`, `llms.txt`.
 
 ### Changed
+- "DEVELOPER" mega-word reveal now plays a short keyboard clack instead of the whoosh —
+  crisp mechanical snap, distinct from the scan and pointer clicks.
 - The "This portfolio" project card points at the actual GitHub repo
   (`abhisheksharma611/self-building-portfolio`) instead of the profile page.
 
