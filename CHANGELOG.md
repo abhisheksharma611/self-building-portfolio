@@ -27,7 +27,7 @@ All notable changes to this project. This project is view-only; see `LICENSE`.
 ### Changed
 - The "This portfolio" project card points at the actual GitHub repo
   (`abhisheksharma611/self-building-portfolio`) instead of the profile page.
-- The spam-detection project card shows its GitHub repo name verbatim:
+- The spam-detection project card and the on-bench sidebar show the GitHub repo name verbatim:
   "AI-Powered Email Spam Detection and Threat Analysis". Repo slug unchanged — link
   intact.
 

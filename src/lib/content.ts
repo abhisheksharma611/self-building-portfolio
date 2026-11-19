@@ -27,7 +27,7 @@ export const hero = {
 
 export const bench = [
   {
-    title: "Email threat analyzer",
+    title: "AI-Powered Email Spam Detection and Threat Analysis",
     text: "A local-first spam classifier: fine-tuned RoBERTa plus a scikit-learn ensemble, six classes, risk and sender-reputation scores.",
   },
   {
